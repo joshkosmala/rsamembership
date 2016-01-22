@@ -5,6 +5,7 @@ class Membership extends Member {
 	private static $db = array(
 		'HomePhone' => 'Varchar',
 		'MobilePhone' => 'Varchar',
+		'MembershipCardNumber' => 'Varchar',
 		'DOB' => 'Date',
 		'StreetAddress1'  => 'Varchar(255)',
 		'StreetAddress2'  => 'Varchar',

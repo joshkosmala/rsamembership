@@ -31,13 +31,15 @@ class ReinstateMembershipTypes extends BuildTask {
 	$type = $member->OldMembershipType;
 	if($type){
 	//	Debug::show($type);die();
-	$group = MembershipType::get()->filter(array('Title'=>$type))->first();
-	if($group){
-	$member->add($group);
+//	$group = MembershipType::get()->filter(array('Title'=>$type))->first();
+//	if($group){
+	$member->MembershipType = $type;
+//	$member->add($group);
 	//Debug::show($type);
 //Debug::show($group);
 //die();		
-}
+$member->write();
+//}
 	}
 	
           // $t = MembershipType::create();
