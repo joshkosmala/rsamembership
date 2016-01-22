@@ -11,3 +11,4 @@ vendor/
 framework/
 cms/
 themes/
+.htaccess
